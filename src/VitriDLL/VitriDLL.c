@@ -66,6 +66,16 @@ LRESULT CALLBACK KbHookProc(int nCode, WPARAM wParam, LPARAM lParam) {
 						SetWindowPos(hActiveWindow, HWND_TOPMOST, 0, 0, 0, 0,
 							SWP_NOMOVE | SWP_NOSIZE);
 					}
+				} else {
+				    if (wParam == VK_OEM_PLUS || wParam == 187 || wParam == 221) {
+                        if (iTenths < 10) {
+                            iTenths++;
+                        }
+				    } else if (wParam == VK_OEM_MINUS || wParam == 189 || wParam == 219) {
+                        if (iTenths > 0) {
+                            iTenths--;
+                        }
+				    }
 				}
 			}
 		}

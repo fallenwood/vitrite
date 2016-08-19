@@ -1,3 +1,9 @@
+New About By Fallenwood
+------------
+Since `ctrl+shift+0` has no effect on windows 7 or above, I added two shotcuts `ctrl+shift+-` and `ctrl+shift+=` to change thet transparence. It was tested in Visual Studio 2015 Community Update 3(MSVC 14.0).
+
+The source code is licensed under the GPL again.
+
 About
 -------------
 Vitrite is a small Windows utility that allows you to manually adjust the level of transparency for almost any visible window. It does this by utilizing a capability present in Windows for variable window transparency.
